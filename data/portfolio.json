@@ -1,0 +1,79 @@
+[
+  {
+    "name": "Saber xenérico",
+    "type": "twitter-bot",
+    "description": "Son un bot que cada hora busca na Wikipedia unha pílula de coñecemento aleatoria para que aprendamos todas.",
+    "status": "dormant",
+    "user": "saberxenerico"
+  },
+  {
+    "name": "Dez segundos",
+    "type": "twitter-bot",
+    "description": "Son un bot que busca nos arquivos da TVG e extrae clips aleatorios de 10 segundos. Vídeos © CRTVG. Cada 4 horas. Non oficial.",
+    "status": "dormant",
+    "user": "10sdememoria"
+  },
+  {
+    "name": "Paxaro espacial",
+    "type": "twitter-bot",
+    "description": "Son un bot que recolle imaxes en tempo real do satélite Meteosat-9 e fai videos con elas. Cada dúas horas durante o día. Imaxes (c) Eumetsat.",
+    "status": "dormant",
+    "user": "paxaroespacial"
+  },
+  {
+    "name": "Poeta fatal",
+    "type": "twitter-bot",
+    "description": "Son poeta, son un bot, son unha emoción intensa que latexa no fondo da túa ialma. Sígueme e fágoche un cuarteto. Versos novos cada 4 horas.",
+    "status": "dormant",
+    "user": "poetafatal"
+  },
+  {
+    "name": "Un saúdo",
+    "type": "twitter-bot",
+    "description": "Son un bot coa forma de Gayoso que durante un ano, cada 15 minutos, vou mandar un saúdo aos 37.308 topónimos oficiais do Nomenclátor da Xunta.",
+    "status": "dormant",
+    "user": "unsaudo"
+  },
+  {
+    "name": "Unha vella",
+    "type": "twitter-bot",
+    "description": "Son un bot que twitea cada dúas horas versos creados con palabras aleatorias do VOLGA.",
+    "status": "dormant",
+    "user": "unhavella"
+  },
+  {
+    "name": "Conceptos explicados",
+    "type": "twitter-bot",
+    "description": "Son un bot que cada dúas horas explico de xeito definitivo todos os conceptos complexos que che interesan.",
+    "status": "dormant",
+    "user": "explicados"
+  },
+  {
+    "name": "Galegos ilustres",
+    "type": "twitter-bot",
+    "description": "Son un bot que catro veces ao dia misturo de xeito aleatorio imaxes de galegos e galegas ilustres con letras de cancións de reggaeton.",
+    "status": "dormant",
+    "user": "galegosilustres"
+  },
+  {
+    "name": "Postais de Galicia",
+    "type": "twitter-bot",
+    "description": "Son un bot que publica cada catro horas unha postal dun lugar aleatorio da Galicia real. Imaxes sacadas de Google Street View.",
+    "status": "dormant",
+    "user": "postaisgalegas"
+  },
+  {
+    "name": "Castelaooo",
+    "type": "twitter-bot",
+    "description": "AGHHHRR, AGHHRR.. MIOLOSSSS!.",
+    "status": "dormant",
+    "user": "castelaooo"
+  },
+  {
+    "name": "Insultómata",
+    "type": "twitter-bot",
+    "description": "Sígueme e consigue un inspirador insulto en punto de cruz.",
+    "status": "alive",
+    "user": "insultomata"
+  }
+]

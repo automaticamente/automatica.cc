@@ -1,0 +1,1 @@
+export const accent = '#bd2a20';
