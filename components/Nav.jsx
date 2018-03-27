@@ -10,11 +10,6 @@ export default ({ main }) => (
       </li>
     )}
     <li>
-      <Link href="/about">
-        <a>Que é?</a>
-      </Link>
-    </li>
-    <li>
       <Link href="/portfolio">
         <a>Portfolio</a>
       </Link>

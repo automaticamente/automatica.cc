@@ -21,6 +21,7 @@ export default ({ title, description }) => (
       <script
         async
         src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING}`}
+        key="ga-gateway"
       />
 
       <script
