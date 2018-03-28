@@ -2,11 +2,13 @@ import React from 'react';
 import Link from 'next/link';
 import Head from '../components/Head.jsx';
 import Header from '../components/Header.jsx';
+import Subscribe from '../components/Subscribe.jsx';
+
 import { sample } from 'lodash';
 
-import { accent } from '../config';
+import { COLOR_ACCENT, MAILCHIMP_URL } from '../config';
 
-export default class Home extends React.Component {
+class Home extends React.Component {
   constructor() {
     super();
 
@@ -14,7 +16,9 @@ export default class Home extends React.Component {
       'Creative coding por amor ao arte',
       'Bots e outras movidas en internet',
       'Axencia galega do contido aleatorio',
-      'bip, bip, bip...'
+      'd[ o_0 ]b',
+      'bip, bip, bip...',
+      '🤖🌈'
     ];
 
     this.state = {
@@ -45,22 +49,41 @@ export default class Home extends React.Component {
 
         <section>
           <article>
-          <p>
-            <strong>Automática</strong> nace no ano 2018 como un alias de Berto
-            Yáñez (<Link href="https://twitter.com/bertez">
-            <a target="_blank">@bertez</a>
-          </Link>) para facer cousas divertidas en Internet, principalmente{' '}
-            <Link href="/portfolio">
-              <a>bots de Twitter.</a>
-            </Link>
-          </p>
+            <p>
+              <strong>Automática</strong> nace no ano 2018 como un alias de
+              Berto Yáñez (<Link href="https://twitter.com/bertez">
+                <a target="_blank">@bertez</a>
+              </Link>) para facer cousas divertidas en Internet, principalmente{' '}
+              <Link href="/portfolio">
+                <a>bots de Twitter.</a>
+              </Link>
+            </p>
 
-          <p>
-            A maioria dos proxectos son por amor ao arte pero se tes algunha idea
-            estou dispoñible por tempo limitado para consultoría e desenvolvemento.
-            Mándame un mail e miramos.
-          </p>
-        </article>
+            <p>
+              A maioria dos proxectos son por amor ao arte pero se tes algunha
+              idea estou dispoñible por tempo limitado para consultoría e
+              desenvolvemento. Mándame un mail e miramos.
+            </p>
+          </article>
+
+          <article className="highlight">
+            <h2>
+              <Link href="https://twitter.com/bertez">
+                <a>Insultómata</a>
+              </Link>
+            </h2>
+            <p>Un bot de twitter que borda insultos en punto de cruz</p>
+          </article>
+
+          <article>
+            <h2>Newsletter</h2>
+            <p>
+              Pode que de cando en vez mande unha newsletter con novidades e
+              cousas interesantes. Ou pode que non. É un misterio. Pero por si
+              acaso:
+            </p>
+            <p><Subscribe url={MAILCHIMP_URL}/></p>
+          </article>
         </section>
 
         <style jsx>{`
@@ -68,7 +91,7 @@ export default class Home extends React.Component {
             font-family: 'Alegreya', serif;
             font-weight: 800;
             font-size: 4rem;
-            color: ${accent};
+            color: ${COLOR_ACCENT};
           }
 
           p.tagline {
@@ -84,10 +107,19 @@ export default class Home extends React.Component {
 
           section p {
             line-height: 1.4;
-            font-size:1.3rem;
-           }
+            font-size: 1.3rem;
+          }
+
+          article.highlight {
+            box-sizing: border-box;
+            background: ${COLOR_ACCENT};
+            color: white;
+            padding: 1rem;
+          }
         `}</style>
       </main>
     );
   }
 }
+
+export default Home;

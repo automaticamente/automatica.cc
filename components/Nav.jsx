@@ -1,7 +1,8 @@
+import React from 'react';
 import Link from 'next/link';
 
-export default ({ main }) => (
-  <ul className="nav">
+const Nav = ({ main }) => (
+  <ul>
     {!main && (
       <li>
         <Link href="/">
@@ -21,19 +22,19 @@ export default ({ main }) => (
     </li>
     <style jsx>
       {`
-        .nav {
+        ul {
           display: flex;
           align-items: center;
           margin-bottom: 3rem;
           height: 1.5rem;
         }
 
-        .nav a {
+        a {
           color: #333;
           text-decoration: none;
         }
 
-        .nav li {
+        li {
           margin-right: 1rem;
           font-size: 1rem;
         }
@@ -41,3 +42,5 @@ export default ({ main }) => (
     </style>
   </ul>
 );
+
+export default Nav;

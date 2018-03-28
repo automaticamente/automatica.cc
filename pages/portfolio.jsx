@@ -1,20 +1,35 @@
 import React from 'react';
-import Link from 'next/link';
 import Head from '../components/Head.jsx';
+import Header from '../components/Header.jsx';
 
 import portfolio from '../data/portfolio.json';
 
-export default () => (
+const Portfolio = () => (
   <main>
     <Head title="Portfolio" />
-    <header>
+
+    <Header>
       <h1>Portfolio</h1>
-      <nav>
-        <Link href="/">
-          <a>Volver</a>
-        </Link>
-      </nav>
-    </header>
-    <ul>{portfolio.map((p, i) => <li key={`portfolio_${i}`}>{p.name}</li>)}</ul>
+    </Header>
+
+    <article>
+      <ul>
+        {portfolio.map((p, i) => <li key={`portfolio_${i}`}>{p.name}</li>)}
+      </ul>
+    </article>
+
+    <style jsx>{`
+      h1 {
+        font-family: 'Alegreya', serif;
+        font-weight: 800;
+        font-size: 4rem;
+      }
+
+      article {
+        padding: 0 1rem;
+      }
+    `}</style>
   </main>
 );
+
+export default Portfolio;

@@ -1,15 +1,17 @@
+import React from 'react';
 import Head from 'next/head';
 import GA from 'react-ga';
 import Router from 'next/router';
 
-const GA_TRACKING = 'UA-116495480-1';
+import {GA_TRACKING} from '../config';
+
+GA.initialize(GA_TRACKING);
 
 Router.onRouteChangeComplete = () => {
-  GA.initialize(GA_TRACKING);
   GA.pageview(window.location.pathname);
 };
 
-export default ({ title, description }) => (
+const CustomHead =  ({ title, description }) => (
   <div>
     <Head>
       <title>{title} - Automática</title>
@@ -21,7 +23,7 @@ export default ({ title, description }) => (
       <script
         async
         src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING}`}
-        key="ga-gateway"
+        key="spy"
       />
 
       <script
@@ -82,3 +84,5 @@ export default ({ title, description }) => (
     `}</style>
   </div>
 );
+
+export default CustomHead;

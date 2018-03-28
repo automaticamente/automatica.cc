@@ -1,6 +1,7 @@
+import React from 'react';
 import Nav from './Nav.jsx';
 
-export default ({ children, main }) => (
+const Header = ({ children, main }) => (
   <header className={main ? 'main' : ''}>
     <Nav main={main} />
     {children}
@@ -17,3 +18,5 @@ export default ({ children, main }) => (
     `}</style>
   </header>
 );
+
+export default Header;
