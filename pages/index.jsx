@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Jumbo from '../components/Jumbo.jsx';
-import MainLayout from '../layouts/MainLayout.jsx';
+import MainLayout from '../components/layouts/MainLayout.jsx';
 
 import { COLOR_ACCENT, MAILCHIMP_URL } from '../config';
 
@@ -36,12 +36,13 @@ const Home = () => (
       </article>
 
       <article className="highlight">
+
         <h2>
           <Link href="https://twitter.com/bertez">
             <a>Insultómata</a>
           </Link>
         </h2>
-        <p>Un bot de twitter que borda insultos en punto de cruz</p>
+        <p>Un bot de twitter que borda insultos en punto de cruz.</p>
       </article>
 
       <article>
@@ -57,10 +58,28 @@ const Home = () => (
     </section>
 
     <style jsx>{`
+      section {
+        display: flex;
+        flex-direction: column;
+      }
 
       p {
         line-height: 1.4;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
+        margin: 0.5rem 0;
+      }
+
+      section {
+        padding: 0 1rem;
+      }
+
+      article {
+        margin-bottom: 2rem;
+      }
+
+      article h2 {
+        font-family: 'Alegreya', serif;
+        font-size: 2rem;
       }
 
       article.highlight {
@@ -68,6 +87,11 @@ const Home = () => (
         background: ${COLOR_ACCENT};
         color: white;
         padding: 1rem;
+      }
+
+      article.highlight a {
+        color: white;
+        text-decoration: none;
       }
     `}</style>
   </MainLayout>

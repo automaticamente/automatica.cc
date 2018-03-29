@@ -3,7 +3,7 @@ import Head from 'next/head';
 import GA from 'react-ga';
 import Router from 'next/router';
 
-import {GA_TRACKING} from '../config';
+import { GA_TRACKING, COLOR_ACCENT } from '../config';
 
 GA.initialize(GA_TRACKING);
 
@@ -11,7 +11,7 @@ Router.onRouteChangeComplete = () => {
   GA.pageview(window.location.pathname);
 };
 
-const CustomHead =  ({ title, description }) => (
+const CustomHead = ({ title, description }) => (
   <div>
     <Head>
       <title>{title} - Automática</title>
@@ -80,6 +80,10 @@ const CustomHead =  ({ title, description }) => (
 
       body {
         font-family: 'Roboto', sans-serif;
+      }
+
+      a {
+        color: ${COLOR_ACCENT};
       }
     `}</style>
   </div>

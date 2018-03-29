@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from '../components/Head.jsx';
 import Header from '../components/Header.jsx';
-import MainLayout from '../layouts/MainLayout.jsx';
+import MainLayout from '../components/layouts/MainLayout.jsx';
 
 import portfolio from '../data/portfolio.json';
 

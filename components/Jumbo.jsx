@@ -41,6 +41,7 @@ class Jumbo extends React.Component {
         <Head
           title={this.props.title}
           description={this.props.description || this.props.title}
+          frontpage={true}
         />
 
         <Nav main={true} />
