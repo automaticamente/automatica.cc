@@ -1,19 +1,18 @@
 import React from 'react';
+import Head from './Head.jsx';
 import Nav from './Nav.jsx';
 
-const Header = ({ children, main }) => (
-  <header className={main ? 'main' : ''}>
-    <Nav main={main} />
-    {children}
+const Header = ({ title, description, children }) => (
+  <header>
+    <Head title={title} description={description || title} />
+
+    <Nav />
+    <h1>{title}</h1>
 
     <style jsx>{`
       header {
         margin-top: 5rem;
         padding: 0 1rem;
-      }
-
-      header.main {
-        min-height: 24rem;
       }
     `}</style>
   </header>

@@ -1,11 +1,12 @@
 import React from 'react';
 import Head from '../components/Head.jsx';
 import Header from '../components/Header.jsx';
+import MainLayout from '../layouts/MainLayout.jsx';
 
 import portfolio from '../data/portfolio.json';
 
 const Portfolio = () => (
-  <main>
+  <MainLayout>
     <Head title="Portfolio" />
 
     <Header>
@@ -29,7 +30,7 @@ const Portfolio = () => (
         padding: 0 1rem;
       }
     `}</style>
-  </main>
+  </MainLayout>
 );
 
 export default Portfolio;
