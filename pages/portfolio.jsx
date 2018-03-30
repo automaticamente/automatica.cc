@@ -3,7 +3,7 @@ import React from 'react';
 
 import Header from '../components/Header.jsx';
 import MainLayout from '../components/layouts/MainLayout.jsx';
-import {Item} from '../components/Item.jsx';
+import {Item, FeaturedItem} from '../components/Item.jsx';
 
 import portfolio from '../data/portfolio.json';
 
@@ -13,13 +13,13 @@ const Portfolio = () => (
 
     <section>
       <ul>
-        {/*portfolio
+        {portfolio
           .filter(p => p.status === 'alive')
-          .map((p, i) => <Item key={`portfolio_${i}`}  {...p} />)*/}
+          .map((p, i) => <FeaturedItem key={`portfolio_featured_${i}`}  {...p} />)}
       </ul>
 
       <h2>Bots durmintes:</h2>
-      <p>E, honestamente, é probable que nunca máis esperten 😔.</p>
+      <p>E, honestamente, é probable que nunca máis esperten 😔</p>
 
       <ul>
         {portfolio
@@ -33,7 +33,6 @@ const Portfolio = () => (
       ul {
         display: flex;
         flex-wrap: wrap;
-        margin-top: 2rem;
       }
 
       h2 {
