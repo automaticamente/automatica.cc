@@ -20,8 +20,18 @@ const CustomHead = ({ title, description }) => (
 
       <meta name="author" content="Automática" />
       <meta name="description" content={description || title} />
-      <link rel="icon" type="image/png" href="/static/favicon-32x32.png" sizes="32x32" />
-      <link rel="icon" type="image/png" href="/static/favicon-16x16.png" sizes="16x16" />
+      <link
+        rel="icon"
+        type="image/png"
+        href="/static/favicon-32x32.png"
+        sizes="32x32"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        href="/static/favicon-16x16.png"
+        sizes="16x16"
+      />
 
       <script
         async
@@ -75,7 +85,6 @@ const CustomHead = ({ title, description }) => (
       }
 
       img {
-        max-width: 100%;
         height: auto;
       }
 
@@ -87,6 +96,16 @@ const CustomHead = ({ title, description }) => (
 
       a {
         color: ${COLOR_ACCENT};
+      }
+
+      body {
+        min-width: 360px;
+      }
+
+      p {
+        line-height: 1.4;
+        font-size: 1.2rem;
+        margin: 0.5rem 0;
       }
     `}</style>
   </div>

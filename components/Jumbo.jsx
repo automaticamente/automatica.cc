@@ -4,7 +4,7 @@ import { sample } from 'lodash';
 import Nav from './Nav.jsx';
 import Head from './Head.jsx';
 
-import { COLOR_ACCENT } from '../config';
+import { BREAKPOINT, COLOR_ACCENT } from '../config';
 
 class Jumbo extends React.Component {
   constructor() {
@@ -15,7 +15,7 @@ class Jumbo extends React.Component {
       'Creative coding por amor ao arte',
       'Bots e outras movidas en internet',
       'd[ o_0 ]b',
-      'bip, bip, bip...',
+      'beep, beep, beep...',
       '🤖🌈'
     ];
 
@@ -66,6 +66,16 @@ class Jumbo extends React.Component {
             font-weight: 800;
             font-size: 3rem;
             line-height: 1;
+          }
+
+          @media all and (min-width: ${BREAKPOINT}) {
+            h1 {
+              font-size: 5rem;
+            }
+
+            p {
+              font-size: 4rem;
+            }
           }
         `}</style>
       </header>
