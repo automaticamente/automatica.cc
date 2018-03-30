@@ -14,11 +14,14 @@ Router.onRouteChangeComplete = () => {
 const CustomHead = ({ title, description }) => (
   <div>
     <Head>
-      <title>{title} - Automática</title>
+      <title>{title}</title>
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+
       <meta name="author" content="Automática" />
       <meta name="description" content={description || title} />
+      <link rel="icon" type="image/png" href="/static/favicon-32x32.png" sizes="32x32" />
+      <link rel="icon" type="image/png" href="/static/favicon-16x16.png" sizes="16x16" />
 
       <script
         async
@@ -76,10 +79,10 @@ const CustomHead = ({ title, description }) => (
         height: auto;
       }
 
-      @import url('https://fonts.googleapis.com/css?family=Alegreya:800|Roboto:400,700');
+      @import url('https://fonts.googleapis.com/css?family=Alegreya:800|Source+Sans+Pro:400,700');
 
       body {
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Source Sans Pro', sans-serif;
       }
 
       a {

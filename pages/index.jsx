@@ -15,19 +15,16 @@ const Home = () => (
     <section>
       <article>
         <p>
-          <strong>Automática</strong> nace no ano 2018 como un alias de Berto
-          Yáñez (<Link href="https://twitter.com/bertez">
-            <a target="_blank">@bertez</a>
-          </Link>) para facer cousas divertidas en Internet, principalmente{' '}
+          <strong>Automática</strong> existe para para facer cousas divertidas
+          en Internet, ata agora{' '}
           <Link href="/portfolio">
-            <a>bots de Twitter.</a>
-          </Link>
+            <a>bots de Twitter</a>
+          </Link> maiormente.
         </p>
 
         <p>
-          A maioria dos proxectos son por amor ao arte pero se tes algunha idea
-          estou dispoñible por tempo limitado para consultoría e
-          desenvolvemento. Mánda{' '}
+          A maioria dos proxectos son por amor ao arte pero tes interese en que
+          fagamos algo xuntas (e dispós de carto). Manda{' '}
           <Link href="mailto:ola@automatica.cc">
             <a>un mail</a>
           </Link>{' '}
@@ -36,7 +33,7 @@ const Home = () => (
       </article>
 
       <article className="highlight">
-
+        <p>Ultimo proxecto:</p>
         <h2>
           <Link href="https://twitter.com/bertez">
             <a>Insultómata</a>
@@ -49,7 +46,7 @@ const Home = () => (
         <h2>Newsletter</h2>
         <p>
           Pode que de cando en vez mande unha newsletter con novidades e cousas
-          interesantes. Ou pode que non. É un misterio. Pero por si acaso:{' '}
+          interesantes. Pode que non. É un misterio. Pero por se acaso:{' '}
           <Link href={MAILCHIMP_URL}>
             <a target="_blank">Subscribete</a>
           </Link>.
@@ -69,17 +66,13 @@ const Home = () => (
         margin: 0.5rem 0;
       }
 
-      section {
-        padding: 0 1rem;
-      }
-
       article {
         margin-bottom: 2rem;
       }
 
       article h2 {
         font-family: 'Alegreya', serif;
-        font-size: 2rem;
+        font-size: 2.5rem;
       }
 
       article.highlight {

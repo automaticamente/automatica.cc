@@ -11,16 +11,16 @@ class Jumbo extends React.Component {
     super();
 
     this.quotes = [
+      'Axencia galega do contido aleatorio',
       'Creative coding por amor ao arte',
       'Bots e outras movidas en internet',
-      'Axencia galega do contido aleatorio',
       'd[ o_0 ]b',
       'bip, bip, bip...',
       '🤖🌈'
     ];
 
     this.state = {
-      quote: sample(this.quotes)
+      quote: this.quotes[0]
     };
   }
 
@@ -51,7 +51,6 @@ class Jumbo extends React.Component {
         <style jsx>{`
           header {
             margin-top: 5rem;
-            padding: 0 1rem;
             min-height: 24rem;
           }
 

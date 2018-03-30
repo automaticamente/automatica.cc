@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import { COLOR_NEUTRAL } from '../config';
 
 const Nav = ({ main }) => (
   <ul>
@@ -30,7 +31,7 @@ const Nav = ({ main }) => (
         }
 
         a {
-          color: #333;
+          color: ${COLOR_NEUTRAL};
           text-decoration: none;
         }
 

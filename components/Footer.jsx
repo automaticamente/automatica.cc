@@ -1,4 +1,5 @@
 import React from 'react';
+import { COLOR_NEUTRAL } from '../config';
 
 const Footer = () => (
   <footer>
@@ -11,6 +12,7 @@ const Footer = () => (
           margin-top: 5rem;
           margin-bottom: 3rem;
           padding: 0 1rem;
+          color: ${COLOR_NEUTRAL};
         }
       `}
     </style>
