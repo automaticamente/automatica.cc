@@ -1,7 +1,56 @@
 import React from 'react';
 import Link from 'next/link';
-import { COLOR_ACCENT, COLOR_NEUTRAL } from '../config';
+import ReactMarkdown from 'react-markdown';
 import TweetEmbed from 'react-tweet-embed';
+import GihubLink from './GithubLink.jsx';
+
+import { BREAKPOINT, COLOR_ACCENT, COLOR_NEUTRAL } from '../config';
+
+const ItemInfo = ({p, featured}) => (
+  <div>
+    <h3 className={featured ? 'featured': null}>
+      <Link href={p.url}>
+        <a>{p.name}</a>
+      </Link>
+    </h3>
+    <p className="url">
+      <Link href={p.url}>
+        <a>{p.url}</a>
+      </Link>
+    </p>
+
+    <p>{p.github ? <GihubLink url={p.github} /> : null}</p>
+
+    <ReactMarkdown source={p.description} />
+
+    <style jsx>{`
+      a {
+        text-decoration: none;
+      }
+
+      h3 {
+        font-family: 'Alegreya', serif;
+        font-size: 1.5rem;
+        font-weight: 800;
+        margin-top: 0;
+      }
+
+      h3.featured {
+        font-size: 2.5rem;
+      }
+
+      p.url {
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+      }
+
+      p.url a {
+        color: ${COLOR_NEUTRAL};
+        font-size: 1rem;
+      }
+    `}</style>
+  </div>
+);
 
 export const FeaturedItem = p => (
   <li>
@@ -15,53 +64,27 @@ export const FeaturedItem = p => (
         />
       ) : null}
     </div>
-    <div className="item">
-      <h3>
-        <Link href={p.url}>
-          <a>{p.name}</a>
-        </Link>
-      </h3>
-      <p className="url">
-        <Link href={p.url}>
-          <a>{p.url}</a>
-        </Link>
-      </p>
+    <ItemInfo p={p} featured={true} />
 
-      <p>{p.description}</p>
-    </div>
     <style jsx>{`
       li {
         margin-bottom: 2rem;
         display: flex;
+        flex-wrap: wrap;
       }
 
       div.preview {
         max-width: 20rem;
-        margin-right: 2rem;
       }
 
-      div.item {
-        margin-top: 10px;
-      }
+      @media all and (min-width: ${BREAKPOINT}) {
+        li {
+          flex-wrap: nowrap;
+        }
 
-      a {
-        text-decoration: none;
-      }
-
-      h3 {
-        font-family: 'Alegreya', serif;
-        font-size: 2rem;
-        font-weight: 800;
-      }
-
-      p.url {
-        margin-top: 0;
-        margin-bottom: 0.5rem;
-      }
-
-      p.url a {
-        color: ${COLOR_NEUTRAL};
-        font-size: 1rem;
+        div.preview {
+          margin-right: 2rem;
+        }
       }
     `}</style>
   </li>
@@ -72,24 +95,9 @@ export const Item = p => (
     <div className="avatar">
       <img src={`/static/avatars/${p.handle}.jpg`} />
     </div>
-    <div>
-      <h3>
-        <Link href={p.url}>
-          <a>{p.name}</a>
-        </Link>
-      </h3>
-      <p className="url">
-        <Link href={p.url}>
-          <a>{p.url}</a>
-        </Link>
-      </p>
-
-      <p>{p.description}</p>
-    </div>
+    <ItemInfo p={p} />
     <style jsx>{`
       li {
-        max-width: 20rem;
-        margin-right: 2rem;
         margin-bottom: 2rem;
         display: flex;
       }
@@ -101,26 +109,15 @@ export const Item = p => (
       img {
         width: 4rem;
         height: 4rem;
-        border: 4px solid ${COLOR_ACCENT};
+        margin-top: 0.52rem;
+        border-radius: 50%;
       }
 
-      a {
-        text-decoration: none;
-      }
-
-      h3 {
-        font-size: 1.4rem;
-        font-weight: 800;
-      }
-
-      p.url {
-        margin-top: 0;
-        margin-bottom: 0.5rem;
-      }
-
-      p.url a {
-        color: ${COLOR_NEUTRAL};
-        font-size: 1rem;
+      @media all and (min-width: ${BREAKPOINT}) {
+        li {
+          max-width: 20rem;
+          margin-right: 2rem;
+        }
       }
     `}</style>
   </li>

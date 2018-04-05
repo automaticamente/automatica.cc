@@ -12,15 +12,20 @@
     "singleQuote": true,
     "jsxBracketSameLine": true
   },
+  "now": {
+    "alias": "automatica.cc"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "js-yaml": "^3.11.0",
     "lodash": "^4.17.5",
     "next": "^5.1.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-ga": "^2.4.1",
+    "react-markdown": "^3.3.0",
     "react-tweet-embed": "^1.1.0"
   }
 }

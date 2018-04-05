@@ -2,9 +2,11 @@
   {
     "name": "Insultómata",
     "type": "twitter-bot",
-    "description": "Como reaccionará a xente a un bot que os insulta?",
+    "description":
+      "Usando unha [gramática libre de contexto](https://github.com/bertez/treegrammar), unha lista de palabras, unhas tipografías e uns fondos con aspecto de punto de cruz este bot constrúe insultos aleatorios e envíallos ás novas followers e resposta ás followers que o mencionen, cun máximo dunha resposta por hora.\n\n Tamén tenta torpemente [adiviñar o xénero](https://genderize.io/) da follower, pero iso non é tan sinxelo en Twitter xa que a única pista é o suposto nome real, e a peña pon uns nomes que flipas. ",
     "status": "alive",
     "url": "https://twitter.com/insultomata",
+    "github": "https://github.com/automaticamente/insultomata",
     "featured": "979417918625763328"
   },
   {
@@ -14,7 +16,8 @@
       "Son un bot que cada hora busca na Wikipedia unha pílula de coñecemento aleatoria para que aprendamos todas.",
     "status": "dormant",
     "handle": "saberxenerico",
-    "url": "https://twitter.com/saberxenerico"
+    "url": "https://twitter.com/saberxenerico",
+    "github": "https://github.com/automaticamente/saberxenerico"
   },
   {
     "name": "Dez segundos",
@@ -23,7 +26,8 @@
       "Son un bot que busca nos arquivos da TVG e extrae clips aleatorios de 10 segundos. Vídeos © CRTVG. Cada 4 horas. Non oficial.",
     "status": "dormant",
     "handle": "10sdememoria",
-    "url": "https://twitter.com/10sdememoria"
+    "url": "https://twitter.com/10sdememoria",
+    "github": "https://github.com/automaticamente/10segundos"
   },
   {
     "name": "Paxaro espacial",
@@ -32,7 +36,8 @@
       "Son un bot que recolle imaxes en tempo real do satélite Meteosat-9 e fai videos con elas. Cada dúas horas durante o día. Imaxes (c) Eumetsat.",
     "status": "dormant",
     "handle": "paxaroespacial",
-    "url": "https://twitter.com/paxaroespacial"
+    "url": "https://twitter.com/paxaroespacial",
+    "github": "https://github.com/automaticamente/paxaro"
   },
   {
     "name": "Poeta fatal",
@@ -41,7 +46,8 @@
       "Son poeta, son un bot, son unha emoción intensa que latexa no fondo da túa ialma. Sígueme e fágoche un cuarteto. Versos novos cada 4 horas.",
     "status": "dormant",
     "handle": "poetafatal",
-    "url": "https://twitter.com/poetafatal"
+    "url": "https://twitter.com/poetafatal",
+    "github": "https://github.com/automaticamente/poetafatal"
   },
   {
     "name": "Un saúdo",
@@ -50,8 +56,8 @@
       "Son un bot coa forma de Gayoso que durante un ano, cada 15 minutos, vou mandar un saúdo aos 37.308 topónimos oficiais do Nomenclátor da Xunta.",
     "status": "dormant",
     "handle": "unsaudo",
-
-    "url": "https://twitter.com/unsaudo"
+    "url": "https://twitter.com/unsaudo",
+    "github": "https://github.com/automaticamente/unsaudo"
   },
   {
     "name": "Unha vella",
@@ -60,8 +66,8 @@
       "Son un bot que twitea cada dúas horas versos creados con palabras aleatorias do VOLGA.",
     "status": "dormant",
     "handle": "unhavella",
-
-    "url": "https://twitter.com/unhavella"
+    "url": "https://twitter.com/unhavella",
+    "github": "https://github.com/automaticamente/unhavella"
   },
   {
     "name": "Conceptos explicados",
@@ -70,8 +76,8 @@
       "Son un bot que cada dúas horas explico de xeito definitivo todos os conceptos complexos que che interesan.",
     "status": "dormant",
     "handle": "explicados",
-
-    "url": "https://twitter.com/explicados"
+    "url": "https://twitter.com/explicados",
+    "github": "https://github.com/automaticamente/conceptos-explicados"
   },
   {
     "name": "Galegos ilustres",
@@ -80,8 +86,8 @@
       "Son un bot que catro veces ao dia misturo de xeito aleatorio imaxes de galegos e galegas ilustres con letras de cancións de reggaeton.",
     "status": "dormant",
     "handle": "galegosilustres",
-
-    "url": "https://twitter.com/galegosilustres"
+    "url": "https://twitter.com/galegosilustres",
+    "github": "https://github.com/automaticamente/galegosilustres"
   },
   {
     "name": "Postais de Galicia",
@@ -90,8 +96,8 @@
       "Son un bot que publica cada catro horas unha postal dun lugar aleatorio da Galicia real. Imaxes sacadas de Google Street View.",
     "status": "dormant",
     "handle": "postaisgalegas",
-
-    "url": "https://twitter.com/postaisgalegas"
+    "url": "https://twitter.com/postaisgalegas",
+    "github": "https://github.com/automaticamente/postais"
   },
   {
     "name": "Castelaooo",
@@ -99,7 +105,7 @@
     "description": "AGHHHRR, AGHHRR.. MIOLOSSSS!.",
     "status": "dormant",
     "handle": "castelaooo",
-
-    "url": "https://twitter.com/castelaooo"
+    "url": "https://twitter.com/castelaooo",
+    "github": "https://github.com/automaticamente/castelaooo"
   }
 ]

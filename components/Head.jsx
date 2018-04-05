@@ -33,6 +33,25 @@ const CustomHead = ({ title, description }) => (
         sizes="16x16"
       />
 
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:site" content="@_automatica_" />
+      <meta name="twitter:title" content="Automática" />
+      <meta
+        name="twitter:description"
+        content="Axencia galega do contido aleatorio"
+      />
+      <meta name="twitter:creator" content="@_automatica_" />
+      <meta name="twitter:image" content="/static/share.png" />
+
+      <meta property="og:title" content="Automática" />
+      <meta property="og:type" content="article" />
+      <meta property="og:url" content="https://automatica.cc/" />
+      <meta property="og:image" content="/static/share.png" />
+      <meta
+        property="og:description"
+        content="Axencia galega do contido aleatorio"
+      />
+
       <script
         async
         src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING}`}
@@ -98,14 +117,8 @@ const CustomHead = ({ title, description }) => (
         color: ${COLOR_ACCENT};
       }
 
-      body {
-        min-width: 360px;
-      }
-
       p {
-        line-height: 1.4;
-        font-size: 1.2rem;
-        margin: 0.5rem 0;
+        margin-bottom: 0.5rem;
       }
     `}</style>
   </div>

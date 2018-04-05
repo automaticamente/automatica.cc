@@ -11,12 +11,12 @@ class Jumbo extends React.Component {
     super();
 
     this.quotes = [
+      '🤖🌈',
       'Axencia galega do contido aleatorio',
-      'Creative coding por amor ao arte',
+      'Creative coding por amor á arte',
       'Bots e outras movidas en internet',
       'd[ o_0 ]b',
-      'beep, beep, beep...',
-      '🤖🌈'
+      'beep, beep, beep...'
     ];
 
     this.state = {
@@ -57,7 +57,7 @@ class Jumbo extends React.Component {
           h1 {
             font-family: 'Alegreya', serif;
             font-weight: 800;
-            font-size: 4rem;
+            font-size: 3.5rem;
             color: ${COLOR_ACCENT};
           }
 

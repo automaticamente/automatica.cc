@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Jumbo from '../components/Jumbo.jsx';
 import MainLayout from '../components/layouts/MainLayout.jsx';
 
-import { COLOR_ACCENT, MAILCHIMP_URL, BREAKPOINT } from '../config';
+import { COLOR_ACCENT, MAILCHIMP_URL, BREAKPOINT, MAX_WIDTH } from '../config';
 
 const Home = () => (
   <MainLayout>
@@ -27,7 +27,7 @@ const Home = () => (
         </p>
 
         <p>
-          A maioria dos proxectos son por amor ao arte pero tes interese en que
+          A maioria dos proxectos son por amor á arte pero tes interese en que
           fagamos algo xuntas (e dispós de carto, of course). Manda{' '}
           <Link href="mailto:ola@automatica.cc">
             <a>un mail</a>
@@ -39,7 +39,7 @@ const Home = () => (
       <article className="highlight">
         <span>Último proxecto:</span>
         <h2>
-          <Link href="https://twitter.com/bertez">
+          <Link href="https://twitter.com/insultomata">
             <a>Insultómata</a>
           </Link>
         </h2>
@@ -66,11 +66,16 @@ const Home = () => (
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        max-width: ${MAX_WIDTH};
+      }
+
+      p {
+        line-height: 1.4;
+        font-size: 1.2rem;
       }
 
       article {
         margin-bottom: 2rem;
-        margin-right: 2rem;
         width: 100%;
       }
 
@@ -101,6 +106,7 @@ const Home = () => (
       @media all and (min-width: ${BREAKPOINT}) {
         article {
           max-width: 20rem;
+          margin-right: 2rem;
         }
       }
     `}</style>

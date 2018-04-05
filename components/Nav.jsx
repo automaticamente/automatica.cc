@@ -7,7 +7,7 @@ const Nav = ({ main }) => (
     {!main && (
       <li>
         <Link href="/">
-          <a>🏠</a>
+          <a>🤖</a>
         </Link>
       </li>
     )}
