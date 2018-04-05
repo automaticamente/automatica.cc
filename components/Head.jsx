@@ -41,12 +41,12 @@ const CustomHead = ({ title, description }) => (
         content="Axencia galega do contido aleatorio"
       />
       <meta name="twitter:creator" content="@_automatica_" />
-      <meta name="twitter:image" content="/static/share.png" />
+      <meta name="twitter:image" content="https://automatica.cc/static/share.png" />
 
       <meta property="og:title" content="Automática" />
       <meta property="og:type" content="article" />
       <meta property="og:url" content="https://automatica.cc/" />
-      <meta property="og:image" content="/static/share.png" />
+      <meta property="og:image" content="https://automatica.cc/static/share.png" />
       <meta
         property="og:description"
         content="Axencia galega do contido aleatorio"
