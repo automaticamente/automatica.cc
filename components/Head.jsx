@@ -33,14 +33,14 @@ const CustomHead = ({ title, description }) => (
         sizes="16x16"
       />
 
-      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@_automatica_" />
       <meta name="twitter:title" content="Automática" />
       <meta
         name="twitter:description"
         content="Axencia galega do contido aleatorio"
       />
-      <meta name="twitter:creator" content="@_automatica_" />
+      <meta name="twitter:creator" content="@bertez" />
       <meta name="twitter:image" content="https://automatica.cc/static/share.png" />
 
       <meta property="og:title" content="Automática" />
